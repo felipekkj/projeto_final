@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de produto</title>
+    <link rel="stylesheet" href="produto.css">
+    <link rel="shortcut icon" href="logo_trial (1).png" type="image/x-icon">
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <ul>
+                <li><a href="pagprincipal.html" >Home</a></li>
+                <li><a href="pagprincipal.html" >Sobre</a></li>
+                <li class="dropdown">
+                    <a href="pagprincipal.html" class="dropbtn">Serviços</a>
+                    <ul class="dropdown-content">
+                        <li><a href="pagprincipal.html">Design</a></li>
+                        <li><a href="pagprincipal.html">Desenvolvimento</a></li>
+                        <li><a href="pagprincipal.html">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="pagprincipal.html" >Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section class="produto">
+        <div class="imagens_produto">
+            <img src="produto1.jpg" alt="" class="imagem_principal" id="imagem-principal">
+            <div class="miniaturas">
+                <img src="produto1.jpg" alt="miniatura 1" class="miniatura" data-imagem="">
+                <img src="produto2.png" alt="miniatura 2" class="miniatura" data-imagem="">
+                <img src="produto3.png" alt="miniatura 3" class="miniatura" data-imagem="">
+            </div>
+        </div>
+        <div class="detalhes-produto">
+            <h2>Camiseta lisa</h2>
+            <p class="descricao">A camiseta é confeccionada em algodão macio, oferecendo conforto e respirabilidade. Com modelagem clássica e mangas curtas, ela se ajusta bem ao corpo, tornando-se uma peça versátil para diversas ocasiões. Seu design clean e sem estampa a torna perfeita para combinações com outras peças, ideal para um look casual e descontraído. Uma escolha essencial para o dia a dia!</p>
+            <p class="preco">R$ 149,99</p>
+
+            <form class="opcoes-compra">
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho">
+                    <option>P</option>
+                    <option>M</option>
+                    <option>G</option>
+                </select>
+
+                <label for="cor">Cor:</label>
+                <select id="cor">
+                    <option>Vermelho</option>
+                    <option>Azul</option>
+                    <option>Preto</option>
+                </select>
+
+                <button type="submit"> <a href="carrinho.html">Comprar</a></button>        
+            </form>
+        </div>
+    </section>
+
+    <section class="comentarios">
+        <h3>Comentarios dos clientes</h3>
+
+        <div class="comentario">
+            <img src="mulher.jpg" alt="Foto da Maria" class="foto-usuario">
+            <p><strong>Maria:</strong> Ótimo produto, recomendo!</p>
+        </div>
+
+        <div class="comentario">
+            <img src="homem.jpg" alt="Foto de João" class="foto-usuario">
+            <p><strong>João:</strong> Muito bom, superou minhas expectativas</p>
+        </div>
+    </section>
+</main>
+<script src=”produto.js”></script>
+</body>
+</html>
